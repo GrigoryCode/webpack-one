@@ -1,11 +1,3 @@
-import _ from 'lodash';
-
-function component() {
-    let element = document.createElement('div');
-  
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+import createMenu from './menu/menu';
+var menu = createMenu(['Home','Portfolio'], 'menu');
+document.body.appendChild(menu);
