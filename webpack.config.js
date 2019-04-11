@@ -14,6 +14,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            filename: 'index.html',
+            chucks: ['index'],
             template: PATHS.source + '/index.pug'
         })
     ],
